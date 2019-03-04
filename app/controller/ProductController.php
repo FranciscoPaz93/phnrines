@@ -56,6 +56,7 @@ class ProductController {
     $produccion=($_POST["produccion"]!="1") ? 0:1;
     $transito=($_POST["transito"]!="1") ? 0:1;
     $categoria=$_POST["categoria"];
+    $user= $_SESSION["UserID"];
     $url = ASSET_PATH."cata/";
     move_uploaded_file($imagen, $url.$nom_imagen);
     //$pre = array('$arti', '$descrip', '$color', 120, '$tipo', '$tamano', '$medida', '$cod', 1500, '$nom_imagen');

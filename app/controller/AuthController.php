@@ -36,6 +36,7 @@ class AuthController
                 $_SESSION['acdc']="active";
                 $_SESSION["usuario"] = $data[0]["Nombre"];
                 $_SESSION["privilegio"] = $data[0]["tipo"];
+                $_SESSION["UserID"]=$data[0]["id"];
                 if ($_SESSION["privilegio"] =='admin'){
                    Redirecciona()->to("administration");
 

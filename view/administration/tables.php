@@ -292,6 +292,8 @@
   <div id="footer" class="span12"> 2018 &copy; HEXSOFT <div class="prueba"></div></div>
 </div>
 <!--end-Footer-part-->
+<script src="<?php asset("js/administration.js")?>"></script>
+<script src="<?php asset("js/administrador.js")?>"></script>
 <script src="<?php asset("js/jquery.min.js")?>"></script>
 <script src="<?php asset("js/jquery.ui.custom.js")?>"></script>
 <script src="<?php asset("js/bootstrap.min.js")?>"></script>

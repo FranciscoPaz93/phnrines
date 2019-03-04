@@ -59,7 +59,11 @@ class ProductController {
     $url = ASSET_PATH."cata/";
     move_uploaded_file($imagen, $url.$nom_imagen);
     //$pre = array('$arti', '$descrip', '$color', 120, '$tipo', '$tamano', '$medida', '$cod', 1500, '$nom_imagen');
-    $pre = array($arti, $marca, $tipo, $descrip, $nom_imagen,$precio,$color , $stock,  $medida, $tamano, $cod, $top,$promocion,$descuento,$label,$points,$contenedor,$oferta,$disponible,$produccion,$categoria,$transito);
+    $pre = array($arti, $marca, $tipo, $descrip, $nom_imagen,$precio,
+        $color , $stock,  $medida, 
+        $tamano, $cod, $top,$promocion,
+        $descuento,$label,$points,$contenedor,$oferta,
+        $disponible,$produccion,$categoria,$almacen,$user,$transito);
     $objC = new FpORM();
 echo json_encode($pre);
 

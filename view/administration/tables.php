@@ -177,7 +177,7 @@
                         </div>
                         <div class="form-group" style="position: static;">
                             <label for="precio">Precio</label>
-                            <input type="number" class="form-control name="precio" placeholder="" required>
+                            <input type="number" class="form-control" name="precio" placeholder="" required>
                         </div>
                         <div class="form-group" style="position: static;">
                             <label for="etiqueta">Etiqueta</label>

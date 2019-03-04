@@ -1,0 +1,12 @@
+.lateral{
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    background-color: #1E1F29;
+
+}
+.logo-lateral{
+    margin: auto;
+    float: none;
+}

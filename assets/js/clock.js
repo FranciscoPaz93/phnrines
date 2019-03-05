@@ -32,5 +32,5 @@ const countdotwn = (deadline, elem, finalmess) =>{
         }
     },1000)
 };
-countdotwn('Sep 30 2018 00:00:00 UTC-0600', 'clock','terminado');
+countdotwn('Mar 30 2018 00:00:00 UTC-0600', 'clock','terminado');
 ///

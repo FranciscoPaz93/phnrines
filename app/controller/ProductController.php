@@ -32,7 +32,7 @@ class ProductController {
   }
 
   public function agregar() {
-
+    session_start();
     $arti = $_POST["articulo"];
     $marca = $_POST["marca"];
     $descrip = $_POST["descripcion"];
@@ -56,7 +56,7 @@ class ProductController {
     $produccion=($_POST["produccion"]!="1") ? 0:1;
     $transito=($_POST["transito"]!="1") ? 0:1;
     $categoria=$_POST["categoria"];
-    $user= $_SESSION["UserID"];
+    $user = $_SESSION["UserID"];
     $url = ASSET_PATH."cata/";
     move_uploaded_file($imagen, $url.$nom_imagen);
     //$pre = array('$arti', '$descrip', '$color', 120, '$tipo', '$tamano', '$medida', '$cod', 1500, '$nom_imagen');
@@ -64,12 +64,12 @@ class ProductController {
         $color , $stock,  $medida, 
         $tamano, $cod, $top,$promocion,
         $descuento,$label,$points,$contenedor,$oferta,
-        $disponible,$produccion,$categoria,$almacen,$user,$transito);
+        $disponible,$produccion,$categoria,$almacen=0,$user,$transito=0);
     $objC = new FpORM();
 echo json_encode($pre);
 
     $objC->Ejecutar("insertarProducto", $pre);
-      redirecciona()->to("administration");
+    redirecciona()->to("administration");
   }
 
 public function modificar($id)
